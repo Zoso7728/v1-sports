@@ -1,0 +1,192 @@
+/* Main Content
+ *======================================================
+#key-features
+  .row
+    max-width: 100%
+    border-bottom: 2px lightgrey solid
+    margin-top: 30px
+    padding-bottom: 20px
+
+    &.last
+      border: none
+
+    .kf-content
+      margin: 25px
+      margin-left: 275px
+
+#contact-us
+  h1
+    color: #CC2343
+    text-align: center
+    margin: 50px
+  .cu-content-group
+    margin: 15px 0px
+
+    p
+      margin: 0px
+
+      &.cu-header
+        font-size: 20px
+
+  .col-third
+    width: 33%
+    float: left
+
+  .v1-sports-resellers
+    .cu-content-group
+      height: 300px
+      margin-bottom: 50px
+
+.hentry, .main
+  background-color: #fff
+  padding: 2.5em 0
+
+.gray, .grey
+  background-color: #f4f4f4
+
+.home-callout
+  padding: 1em 0 0
+  border-top: 2px solid #9E1111
+  .container
+    max-width: 800px
+
+.inside-header
+  position: relative
+  h1
+    color: #fff
+    position: absolute
+    top: 30%
+    left: 5%
+    width: 35%
+    font-size: 1em
+
+    strong
+      font-family: "Avenir Next Bold"
+
+  h4
+    color: #fff
+    position: absolute
+    top: 45%
+    left: 5%
+    width: 35%
+    font-size: 1.7em
+
+  img
+    display: block
+    margin: 0 auto
+    width: 100%
+
+section.has-tabs
+  background-color: #000
+  width: 100%
+  z-index: 11
+  &.fixed
+    position: fixed
+    top: 0
+    left: 0
+
+body.logged-in section.has-tabs.fixed
+  top: 32px
+
+ul.tabs-navigation
+  text-align: center
+  margin: 0
+  padding: 0
+  > li
+    display: inline-block
+    width: auto
+    padding: 0
+    text-transform: uppercase
+    font-weight: 400
+    font-size: 0.96em
+    a
+      color: #ccc
+      display: block
+      padding: 18px 20px
+      &:hover, &.link-active
+        background-color: #444
+      span
+        display: block
+        margin: 0 auto
+        font-size: 22px
+
+@media all and (max-width: 735px)
+  ul.tabs-navigation > li a
+    padding: 15px 11px
+
+@media all and (max-width: 600px)
+  section.has-tabs
+    &.inside-page
+      height: auto
+    &.fixed
+      position: relative
+  ul
+    &.tabs-navigation, &.nojs-navigation
+      width: 100%
+      display: block
+    &.tabs-navigation > li, &.nojs-navigation > li
+      position: relative
+      z-index: 20
+      display: block
+      width: 100%
+    &.tabs-navigation > li > a, &.nojs-navigation > li > a
+      display: block
+      padding: 6px 11px
+
+@media all and (min-width: 1024px)
+  .inside-header
+    h1
+      font-size: 2.5em
+
+// Ipad landscape
+@media all and (max-width: 1024px)
+  .inside-header
+    h1
+      font-size: 2em
+    h4
+      font-size: 1.3em
+    img
+      margin-top: 45px
+
+// Ipad portrait
+@media all and (max-width: 768px)
+  .inside-header
+    h1
+      font-size: 1.5em
+    h4
+      font-size: 1em
+  #contact-us
+    .col-third
+      width: 100%
+
+      .cu-content-group
+        height: auto
+        margin-bottom: 50px
+
+@media all and (max-width: 767px)
+  .inside-header
+    h4
+      font-size: .8em
+    img
+      margin-top: 45px
+
+// Iphone 6plus portrait
+@media all and (max-width: 414px)
+  .inside-header
+    h1
+      font-size: 1em
+      width: 50%
+    h4
+      font-size: .5em
+      top: 50%
+      width: 50%
+  #key-features
+    .row
+      .left
+        width: 100%
+      .kf-content
+        margin-left: 0px
+  #contact-us
+    .v1-sports-resellers
+      h1
+        margin: 0px

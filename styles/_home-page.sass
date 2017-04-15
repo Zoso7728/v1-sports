@@ -1,0 +1,399 @@
+/* Homepage
+ *======================================================
+
+.mobile-hero
+  margin-bottom: -6px
+
+.video-wrap
+  position: relative
+  width: 100%
+
+.overlay
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.37)
+  z-index: 10
+
+.centered-wrap
+  display: table
+  width: 100%
+  height: 100%
+
+.home_arrow
+  //display: table-cell;
+  text-align: center
+  vertical-align: bottom
+
+.center-callout
+  display: table-cell
+  text-align: center
+  vertical-align: middle
+  h2
+    color: #fff
+    font-size: 3em
+    margin-bottom: 15px
+  a
+    color: #fff
+    padding: 10px 20px
+
+.main-vid
+  width: 100% !important
+  height: auto !important
+  display: block
+  margin: 0 auto
+  z-index: 1
+
+.col-half
+  width: 50%
+  float: left
+  position: relative
+  &.pull_right
+    float: right
+
+.height
+  height: 450px
+
+.display-table
+  position: relative
+  display: table
+  background: #f4f4f4
+
+.middle
+  display: table-cell
+  vertical-align: middle
+  .mid-content
+    max-width: 536px
+    width: 80%
+    display: block
+    margin: 0 auto
+    a p
+      color: #000
+
+// Marques styles
+body
+  &.home
+    #first
+      padding-top: 0px
+      ul
+        list-style-type: none
+        padding: 0px
+.home-page
+  font-family: "Arvil Next-Regular"
+  h1
+    top: 30%
+  h3
+    font-size: 32px
+  .hero-section
+    position: relative
+    background-color: lightgrey
+    #home-page-hero-img
+      width: 100%
+    p
+      margin: 0
+  .cta-section
+    /*background-color: #BCBEC0;
+    background-color: lightgrey
+    text-align: center
+    padding-top: 20px
+    padding-bottom: 30px
+    div
+      max-width: 100%
+      width: 100%
+  .cta-button
+    background-color: #CC2343
+    color: #fff
+    text-transform: uppercase
+    border: none
+    padding: 8px 45px 8px 45px
+    font-size: 18px
+    margin-bottom: 25px
+    margin-right: 15px
+    margin-left: 15px
+    cursor: pointer
+    /*font-family: "Gotham Bold Regular", sans-serif;
+    font-size: 24px
+    font-weight: bold
+    &:hover
+      background-color: #fff
+      color: #CC2343
+      border: 1px #cc2342 solid
+
+.cta-button
+  background-color: #CC2343
+  color: #fff
+  text-transform: uppercase
+  border: none
+  padding: 8px 45px 8px 45px
+  font-size: 18px
+  margin-bottom: 25px
+  margin-right: 15px
+  margin-left: 15px
+  cursor: pointer
+  /*font-family: "Gotham Bold Regular", sans-serif;
+  font-size: 24px
+  font-weight: bold
+  &:hover
+    background-color: #fff
+    color: #CC2343
+    border: 1px #cc2342 solid
+
+body.home .site article .container .ten .home-page .wrapper .main-section .article .article-left ul
+  list-style-type: none
+  padding: 0
+  margin-bottom: 0
+
+.home-page
+  .main-section
+    position: relative
+    padding-top: 55px
+    text-align: center
+    #software-image
+      position: absolute
+      right: -50px
+      top: 250px
+    header
+      margin-bottom: 55px
+      p
+        max-width: 55%
+        margin: 0 auto
+        text-align: left
+    p
+      color: #656565
+      font-family: "Arvil Next-Regular"
+      font-size: 20px
+      font-weight: 100
+      margin: 0 auto
+      text-align: left
+    .article
+      margin-bottom: 55px
+      .article-left
+        width: 50%
+        img
+          width: 5%
+          padding-right: 5px
+      li
+        margin-bottom: 30px
+      h4
+        color: #CC2343
+        font-size: 26px
+        text-align: left
+      i
+        color: #CC2343
+        font-size: 28px
+  .geo-section
+    /*background-color: #BCBEC0;
+    background-color: lightgrey
+    text-align: center
+    overflow: hidden
+    padding-bottom: 30px
+    h3:first-child
+      margin-top: 30px
+      margin-bottom: 30px
+    h2
+      color: #000
+      margin: 0
+      font-size: 42px
+  .geo-map
+    position: relative
+    width: 45%
+    height: 300px
+    padding-top: 50px
+    .stats-info
+      position: absolute
+      top: 70%
+      left: 50%
+      transform: translate(-50%, -50%)
+  .stats-holder
+    .stats-info
+      padding: 20px 35px
+      border-left: 2px solid #BCBEC0
+    .stats-top
+      border-bottom: 2px solid #BCBEC0
+      padding-top: 55px
+    .stats-bottom
+      padding-bottom: 5px
+      h3
+        width: 240px
+        line-height: 35px
+        margin: 0
+
+// Ipad landscape
+@media all and (max-width: 1024px)
+  .main-section
+    header
+      p
+        max-width: 75%
+    .article
+      .article-left
+        margin-top: 450px
+        width: 100%
+      #software-image
+        margin-left: auto
+        margin-right: auto
+        left: 0
+        right: 0
+  .geo-map
+    width: 40%
+    .stats-info
+      top: 60%
+  .stats-holder
+    width: 55%
+    .stats-info
+      padding: 10px 5.7px
+
+// Ipad portrait
+@media all and (max-width: 768px)
+  .center-callout h2
+    font-size: 1.3em
+    margin-bottom: 25px
+  // Marques styles
+  .main-section
+    header
+      p
+        max-width: 90%
+    .article
+      div
+        margin-left: 0px
+      .article-left
+        margin-top: 450px
+        width: 100%
+  .geo-map
+    float: none
+    height: auto
+    width: 100%
+    padding-top: 0
+    .stats-info
+      top: 50%
+  .stats-holder
+    float: none
+    width: 100%
+    .stats-info
+      padding: 20px 51.3px
+    .right
+      .stats-info
+        border-right: 2px solid #BCBEC0
+
+// Iphone 6plus landscape
+@media all and (max-width: 736px)
+  .main-section
+    .article
+      div
+        margin-left: 0px
+  .geo-section
+    h2
+      font-size: 24px
+    h3
+      font-size: 20px
+  .geo-map
+    max-width: 40%
+    float: left
+  .stats-holder
+    width: 50%
+    float: right
+    .stats-info
+      border: none
+      padding: 0
+      width: 50%
+    .right
+      width: 50%
+      .stats-info
+        border: none
+    .left
+      width: 45%
+    .stats-bottom
+      h3
+        width: auto
+
+// Iphone 6plus portrait
+@media all and (max-width: 414px)
+  body
+    &.page
+      .header
+        .logo
+          max-width: 75px
+          left: -15px
+  h1
+    &.hero-text
+        font-size: 1em
+        top: 30%
+  .cta-section
+    h3
+      font-size: 20px
+    .cta-button
+      font-size: 12px
+  .main-section
+    header
+      h3
+        font-size: 24px
+      p
+        font-size: 16px
+    #software-image
+      top: 200px
+    .article
+      .article-left
+        margin-top: 250px
+        img
+          width: 7%
+        h4
+          font-size: 18px
+        p
+          font-size: 16px
+  .geo-section
+    h3:first-child
+      width: 90%
+      margin: 20px auto
+    .geo-map
+      max-width: 100%
+      float: none
+    .stats-holder
+      width: 100%
+      float: none
+      .stats-info
+        width: auto
+
+// Iphone 6 portrait
+@media all and (max-width: 375px)
+  .cta-section
+    .cta-button
+      font-size: 10px
+  .main-section
+    header
+      h3
+        font-size: 20px
+
+// Galaxy S5 portrait
+@media all and (max-width: 360px)
+  .cta-section
+    .cta-button
+      font-size: 12px
+
+// Iphone 5 portrait
+@media all and (max-width: 320px)
+  .cta-section
+    .cta-button
+      font-size: 10px
+      margin-left: 5px
+      margin-right: 5px
+  .main-section
+    header
+      h3
+        font-size: 18px
+    .article
+      .article-left
+        margin-top: 180px
+
+@media all and (max-width: 600px)
+  .col-half
+    width: 100%
+    float: none
+    &.pull_right
+      width: 100%
+      float: none
+  .height
+    height: 250px
+  .col-half .middle
+    padding-top: 1em

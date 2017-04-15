@@ -1,0 +1,551 @@
+
+
+
+
+/*
+ * # Semantic - Form
+ * http://github.com/jlukic/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+/*******************************
+ *           Standard
+ *******************************
+/*--------------------
+ *        Form
+ *---------------------
+
+.ui
+  &.form
+    position: relative
+    max-width: 100%
+    \:first-child
+      margin-top: 0em
+    \:last-child
+      margin-bottom: 0em
+    > p
+      margin: 1em 0
+    .field
+      clear: both
+      margin: 0em 0em 1em
+      > label
+        margin: 0em 0em 0.3em
+        display: block
+        color: #555555
+        font-size: 0.875em
+    textarea
+      width: 100%
+    input
+      &[type="color"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="email"], &[type="month"], &[type="number"], &[type="password"], &[type="range"], &[type="search"], &[type="tel"], &[type="text"], &[type="time"], &[type="url"], &[type="week"]
+        width: 100%
+    .ui.input
+      width: 100%
+    textarea
+      margin: 0em
+      padding: 0.65em 1em
+      font-size: 1em
+      background-color: #FFFFFF
+      border: 1px solid rgba(0, 0, 0, 0.15)
+      outline: none
+      color: rgba(0, 0, 0, 0.7)
+      border-radius: 0.3125em
+      -webkit-transition: background-color 0.3s ease-out, -webkit-box-shadow 0.2s ease, border-color 0.2s ease
+      -moz-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease
+      transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease
+      -webkit-box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0.3) inset
+      box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0.3) inset
+      -webkit-appearance: none
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      -ms-box-sizing: border-box
+      box-sizing: border-box
+    input
+      &[type="color"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="email"], &[type="month"], &[type="number"], &[type="password"], &[type="search"], &[type="tel"], &[type="text"], &[type="time"], &[type="url"], &[type="week"]
+        margin: 0em
+        padding: 0.65em 1em
+        font-size: 1em
+        background-color: #FFFFFF
+        border: 1px solid rgba(0, 0, 0, 0.15)
+        outline: none
+        color: rgba(0, 0, 0, 0.7)
+        border-radius: 0.3125em
+        -webkit-transition: background-color 0.3s ease-out, -webkit-box-shadow 0.2s ease, border-color 0.2s ease
+        -moz-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease
+        transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease
+        -webkit-box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0.3) inset
+        box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0.3) inset
+        -webkit-appearance: none
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        -ms-box-sizing: border-box
+        box-sizing: border-box
+  &.textarea
+    line-height: 1.33
+    min-height: 8em
+    height: 12em
+    max-height: 24em
+    resize: vertical
+  &.form
+    textarea
+      line-height: 1.33
+      min-height: 8em
+      height: 12em
+      max-height: 24em
+      resize: vertical
+      vertical-align: top
+    input[type="checkbox"]
+      vertical-align: top
+    .divider
+      clear: both
+      margin: 1em 0em
+    .info.message, .warning.message, .error.message
+      display: none
+    .message:first-child
+      margin-top: 0px
+    .field .prompt.label
+      white-space: nowrap
+    .inline.field .prompt
+      margin-top: 0em
+      margin-left: 1em
+      &:before
+        margin-top: -0.3em
+        bottom: auto
+        right: auto
+        top: 50%
+        left: 0em
+    input
+      &[type="color"]:focus, &[type="date"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="email"]:focus, &[type="month"]:focus, &[type="number"]:focus, &[type="password"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="text"]:focus, &[type="time"]:focus, &[type="url"]:focus, &[type="week"]:focus .ui.form textarea:focus
+        color: rgba(0, 0, 0, 0.85)
+        border-color: rgba(0, 0, 0, 0.2)
+        border-bottom-left-radius: 0
+        border-top-left-radius: 0
+        -webkit-appearance: none
+        -webkit-box-shadow: 0.3em 0em 0em 0em rgba(0, 0, 0, 0.2) inset
+        box-shadow: 0.3em 0em 0em 0em rgba(0, 0, 0, 0.2) inset
+    &.warning .warning.message, &.error .error.message
+      display: block
+    .fields.error .field label, .field.error label, .fields.error .field .input, .field.error .input
+      color: #D95C5C
+    .fields.error .field .corner.label, .field.error .corner.label
+      border-color: #D95C5C
+      color: #FFFFFF
+    .fields.error .field
+      textarea
+        background-color: #FFFAFA
+        border-color: #E7BEBE
+        border-left: none
+        color: #D95C5C
+        padding-left: 1.2em
+        border-bottom-left-radius: 0
+        border-top-left-radius: 0
+        -webkit-box-shadow: 0.3em 0em 0em 0em #D95C5C inset
+        box-shadow: 0.3em 0em 0em 0em #D95C5C inset
+      input
+        &[type="color"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="email"], &[type="month"], &[type="number"], &[type="password"], &[type="search"], &[type="tel"], &[type="text"], &[type="time"], &[type="url"], &[type="week"]
+          background-color: #FFFAFA
+          border-color: #E7BEBE
+          border-left: none
+          color: #D95C5C
+          padding-left: 1.2em
+          border-bottom-left-radius: 0
+          border-top-left-radius: 0
+          -webkit-box-shadow: 0.3em 0em 0em 0em #D95C5C inset
+          box-shadow: 0.3em 0em 0em 0em #D95C5C inset
+    .field.error
+      textarea
+        background-color: #FFFAFA
+        border-color: #E7BEBE
+        border-left: none
+        color: #D95C5C
+        padding-left: 1.2em
+        border-bottom-left-radius: 0
+        border-top-left-radius: 0
+        -webkit-box-shadow: 0.3em 0em 0em 0em #D95C5C inset
+        box-shadow: 0.3em 0em 0em 0em #D95C5C inset
+      input
+        &[type="color"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="email"], &[type="month"], &[type="number"], &[type="password"], &[type="search"], &[type="tel"], &[type="text"], &[type="time"], &[type="url"], &[type="week"]
+          background-color: #FFFAFA
+          border-color: #E7BEBE
+          border-left: none
+          color: #D95C5C
+          padding-left: 1.2em
+          border-bottom-left-radius: 0
+          border-top-left-radius: 0
+          -webkit-box-shadow: 0.3em 0em 0em 0em #D95C5C inset
+          box-shadow: 0.3em 0em 0em 0em #D95C5C inset
+      textarea:focus
+        border-color: #ff5050
+        color: #ff5050
+        -webkit-appearance: none
+        -webkit-box-shadow: 0.3em 0em 0em 0em #FF5050 inset
+        box-shadow: 0.3em 0em 0em 0em #FF5050 inset
+      input
+        &[type="color"]:focus, &[type="date"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="email"]:focus, &[type="month"]:focus, &[type="number"]:focus, &[type="password"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="text"]:focus, &[type="time"]:focus, &[type="url"]:focus, &[type="week"]:focus
+          border-color: #ff5050
+          color: #ff5050
+          -webkit-appearance: none
+          -webkit-box-shadow: 0.3em 0em 0em 0em #FF5050 inset
+          box-shadow: 0.3em 0em 0em 0em #FF5050 inset
+    .fields.error .field .ui.dropdown, .field.error .ui.dropdown
+      background-color: #FFFAFA
+      color: #D95C5C
+      .item
+        background-color: #FFFAFA
+        color: #D95C5C
+    .fields.error .field .ui.dropdown, .field.error .ui.dropdown, .fields.error .field .ui.dropdown:hover, .field.error .ui.dropdown:hover
+      -webkit-box-shadow: 0px 0px 0px 1px #E7BEBE !important
+      box-shadow: 0px 0px 0px 1px #E7BEBE !important
+    .fields.error .field .ui.dropdown:hover .menu, .field.error .ui.dropdown:hover .menu
+      -webkit-box-shadow: 0px 1px 0px 1px #E7BEBE
+      box-shadow: 0px 1px 0px 1px #E7BEBE
+    .fields.error .field .ui.selection.dropdown .menu .item:hover, .field.error .ui.selection.dropdown .menu .item:hover
+      background-color: #FFF2F2
+    .fields.error .field .ui.dropdown .menu .active.item, .field.error .ui.dropdown .menu .active.item
+      background-color: #FDCFCF !important
+    \::-webkit-input-placeholder, ::-moz-placeholder
+      color: #AAAAAA
+    \:focus
+      &::-webkit-input-placeholder, &::-moz-placeholder
+        color: #999999
+    .error
+      \::-webkit-input-placeholder, ::-moz-placeholder
+        color: rgba(255, 80, 80, 0.4)
+      \:focus
+        &::-webkit-input-placeholder, &::-moz-placeholder
+          color: rgba(255, 80, 80, 0.7)
+    .field
+      \:disabled
+        opacity: 0.5
+      &.disabled
+        opacity: 0.5
+        label
+          opacity: 0.5
+        \:disabled
+          opacity: 1
+    &.loading
+      position: relative
+      &:after
+        position: absolute
+        top: 0%
+        left: 0%
+        content: ''
+        width: 100%
+        height: 100%
+        background: rgba(255, 255, 255, 0.8) url(../images/loader-large.gif) no-repeat 50% 50%
+        visibility: visible
+    &.fluid
+      width: 100%
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      -ms-box-sizing: border-box
+      box-sizing: border-box
+    input.attached
+      width: auto
+    .date.field > label
+      position: relative
+      &:after
+        position: absolute
+        top: 2em
+        right: 0.5em
+        font-family: 'Icons'
+        content: '\f133'
+        font-size: 1.2em
+        font-weight: normal
+        color: #CCCCCC
+  &.inverted.form
+    label
+      color: #FFFFFF
+    .field.error
+      textarea
+        background-color: #FFCCCC
+      input
+        &[type="color"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="email"], &[type="month"], &[type="number"], &[type="password"], &[type="search"], &[type="tel"], &[type="text"], &[type="time"], &[type="url"], &[type="week"]
+          background-color: #FFCCCC
+    .ui.checkbox
+      label
+        color: rgba(255, 255, 255, 0.8)
+        &:hover
+          color: #FFFFFF
+      .box:hover
+        color: #FFFFFF
+  &.form
+    .grouped.fields
+      margin: 0em 0em 1em
+      .field
+        display: block
+        float: none
+        margin: 0.5em 0em
+        padding: 0em
+    .fields
+      clear: both
+      &:after
+        content: ' '
+        display: block
+        clear: both
+        visibility: hidden
+        line-height: 0
+        height: 0
+      > .field
+        clear: none
+        float: left
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        -ms-box-sizing: border-box
+        box-sizing: border-box
+        &:first-child
+          border-left: none
+          -webkit-box-shadow: none
+          box-shadow: none
+    .two.fields >
+      .fields, .field
+        width: 50%
+        padding-left: 1%
+        padding-right: 1%
+    .three.fields >
+      .fields, .field
+        width: 33.333%
+        padding-left: 1%
+        padding-right: 1%
+    .four.fields >
+      .fields, .field
+        width: 25%
+        padding-left: 1%
+        padding-right: 1%
+    .five.fields >
+      .fields, .field
+        width: 20%
+        padding-left: 1%
+        padding-right: 1%
+    .fields
+      .field
+        &:first-child
+          padding-left: 0%
+        &:last-child
+          padding-right: 0%
+      .wide.field
+        width: 6.25%
+        padding-left: 1%
+        padding-right: 1%
+        &:first-child
+          padding-left: 0%
+        &:last-child
+          padding-right: 0%
+      >
+        .one.wide.field
+          width: 6.25%
+        .two.wide.field
+          width: 12.5%
+        .three.wide.field
+          width: 18.75%
+        .four.wide.field
+          width: 25%
+        .five.wide.field
+          width: 31.25%
+        .six.wide.field
+          width: 37.5%
+        .seven.wide.field
+          width: 43.75%
+        .eight.wide.field
+          width: 50%
+        .nine.wide.field
+          width: 56.25%
+        .ten.wide.field
+          width: 62.5%
+        .eleven.wide.field
+          width: 68.75%
+        .twelve.wide.field
+          width: 75%
+        .thirteen.wide.field
+          width: 81.25%
+        .fourteen.wide.field
+          width: 87.5%
+        .fifteen.wide.field
+          width: 93.75%
+        .sixteen.wide.field
+          width: 100%
+    .inline
+      &.fields .field
+        min-height: 1.3em
+        margin-right: 0.5em
+        >
+          label, p, .ui.input, input
+            display: inline-block
+            width: auto
+            margin-top: 0em
+            margin-bottom: 0em
+            vertical-align: middle
+      &.field >
+        label, p, .ui.input, input
+          display: inline-block
+          width: auto
+          margin-top: 0em
+          margin-bottom: 0em
+          vertical-align: middle
+      &.fields .field > :first-child, &.field > :first-child
+        margin: 0em 0.5em 0em 0em
+      &.fields .field > :only-child, &.field > :only-child
+        margin: 0em
+  &.small.form
+    font-size: 0.875em
+    textarea
+      font-size: 1em
+    input
+      &[type="color"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="email"], &[type="month"], &[type="number"], &[type="password"], &[type="search"], &[type="tel"], &[type="text"], &[type="time"], &[type="url"], &[type="week"]
+        font-size: 1em
+    label
+      font-size: 1em
+  &.large.form
+    font-size: 1.125em
+
+/*--------------------
+ *        Content
+ *---------------------
+
+/*--------------------
+ *        Field
+ *---------------------
+
+/*--------------------
+ *        Labels
+ *---------------------
+
+/*--------------------
+ *    Standard Inputs
+ *---------------------
+
+/*--------------------
+ *       Dividers
+ *---------------------
+
+/*--------------------
+ *   Types of Messages
+ *---------------------
+
+/* Assumptions
+
+/*--------------------
+ *   Validation Prompt
+ *---------------------
+
+/*******************************
+ *            States
+ *******************************
+/*--------------------
+ *        Focus
+ *---------------------
+
+/*--------------------
+ *        Error
+ *---------------------
+/* On Form
+
+/*--------------------
+ *        Warning
+ *---------------------
+/* On Form
+
+/* On Field(s)
+
+/*----------------------------
+ *  Dropdown Selection Warning
+ *-----------------------------
+
+/* Currently Active Item
+
+/*--------------------
+ *  Empty (Placeholder)
+ *---------------------
+/* browsers require these rules separate
+
+/* Error Placeholder
+
+/*--------------------
+ *       Disabled
+ *---------------------
+
+/*--------------------
+ *     Loading State
+ *---------------------
+/* On Form
+
+/*******************************
+ *           Variations
+ *******************************
+/*--------------------
+ *      Fluid Width
+ *---------------------
+
+/*--------------------------
+ *  Input w/ attached Button
+ *---------------------------
+
+/*--------------------
+ *      Date Input
+ *---------------------
+
+/*--------------------
+ *    Inverted Colors
+ *---------------------
+
+/*--------------------
+ *     Field Groups
+ *---------------------
+/* Grouped Vertically
+
+/*--------------------
+ *          Fields
+ *---------------------
+/* Split fields
+
+/* Other Combinations
+
+/* Fields grid support
+
+/* Swap to full width on mobile
+@media only screen and (max-width: 767px)
+  .ui.form
+    .two.fields >
+      .fields, .field
+        width: 100%
+        padding-left: 0%
+        padding-right: 0%
+    .three.fields >
+      .fields, .field
+        width: 100%
+        padding-left: 0%
+        padding-right: 0%
+    .four.fields >
+      .fields, .field
+        width: 100%
+        padding-left: 0%
+        padding-right: 0%
+    .five.fields >
+      .fields, .field
+        width: 100%
+        padding-left: 0%
+        padding-right: 0%
+    .fields >
+      .two.wide.field, .three.wide.field, .four.wide.field, .five.wide.field, .six.wide.field, .seven.wide.field, .eight.wide.field, .nine.wide.field, .ten.wide.field, .eleven.wide.field, .twelve.wide.field, .thirteen.wide.field, .fourteen.wide.field, .fifteen.wide.field, .sixteen.wide.field
+        width: 100%
+        padding-left: 0%
+        padding-right: 0%
+
+/*--------------------
+ *    Inline Fields
+ *---------------------
+
+/*--------------------
+ *        Sizes
+ *---------------------
+/* Standard
+
+/* Large
+
+input[type="submit"]
+  border: none
+  -webkit-appearance: none

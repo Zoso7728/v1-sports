@@ -1,0 +1,22 @@
+/* Shortcodes
+ *======================================================
+
+.main
+  background-position: center center
+  background-size: cover
+  position: relative
+  .overlay
+    display: none
+  &.overlay-active .overlay
+    display: block
+    position: absolute
+    z-index: 0
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.42)
+  &.white-font
+    color: #fff
+    h1, h2, h3, h4
+      color: #fff
